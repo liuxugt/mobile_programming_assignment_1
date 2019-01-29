@@ -6,54 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/Username_reg"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="124dp"
-        android:ems="10"
-        android:hint="@string/text_enter_username"
-        android:inputType="textPersonName"
+    <Button
+        android:id="@+id/turn_to_reg_btn"
+        android:layout_width="130dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="360dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="turn_to_reg"
+        android:text="@string/button_turn_to_register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/reg_btn"
-        android:layout_width="106dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:onClick="register"
-        android:text="@string/button_register"
+        android:id="@+id/turn_to_log_btn"
+        android:layout_width="130dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="turn_to_log"
+        android:text="@string/button_turn_to_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_reg"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/comment_reg"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/password_reg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="@string/text_enter_password"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username_reg" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,9 +16,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** Called when the user taps the register button**/
-    public void register(View view){
-        TextView txt = (TextView) findViewById(R.id.reg_btn);
-        txt.setText("Submitted");
+    public void turn_to_reg(View view){
+        Intent i = new Intent(view.getContext(), activity_reg.class);
+        startActivityForResult(i, 0);
+    }
+
+    public void turn_to_log(View view){
+        Intent i = new Intent(view.getContext(), activity_log.class);
+        startActivityForResult(i, 0);
     }
 
 }

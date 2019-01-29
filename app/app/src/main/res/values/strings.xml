@@ -4,5 +4,8 @@
     <string name="text_enter_password">Password</string>
     <string name="button_register">register</string>
     <string name="button_log_in">log in</string>
-    <string name="comment_reg">Please type in your username and password</string>
+    <string name="comment_reg">Please type in your username and password,\n the password should be more than 10 letters</string>
+    <string name="comment_log">Please type in your username and password\n</string>
+    <string name="button_turn_to_register">sign up</string>
+    <string name="button_turn_to_login">sign in</string>
 </resources>
