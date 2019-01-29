@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "119952270965",
-    "firebase_url": "https://appfirebaseproject-c426c.firebaseio.com",
-    "project_id": "appfirebaseproject-c426c",
-    "storage_bucket": "appfirebaseproject-c426c.appspot.com"
+    "project_number": "1062006014297",
+    "firebase_url": "https://myapplication-6f314.firebaseio.com",
+    "project_id": "myapplication-6f314",
+    "storage_bucket": "myapplication-6f314.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:119952270965:android:13c3c6a65bcbec53",
+        "mobilesdk_app_id": "1:1062006014297:android:13c3c6a65bcbec53",
         "android_client_info": {
           "package_name": "com.example.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "119952270965-544vd1jjs9v7c5rsnsmg3mb066abkksv.apps.googleusercontent.com",
+          "client_id": "1062006014297-8egkqr4lp4gr6qr50ci06erhk374f38t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.myapplication",
-            "certificate_hash": "32375e96581d0e886752678b96579e885af9300b"
+            "certificate_hash": "67d1b1f6d9b1d34dd47ae9a7f6ebe0c1030d6993"
           }
         },
         {
-          "client_id": "119952270965-b2ttgksiaqs2ts1tl6s7rq6mggfiqqhe.apps.googleusercontent.com",
+          "client_id": "1062006014297-qd9ge01gash07qgc2kd9ji3lhhuuh9nk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDcYn-CO0AjaOdY3MvfagWndUOu8ZGrgxE"
+          "current_key": "AIzaSyCqmuk8UO5Bf3502WisObASa0_XLKLpHUg"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "119952270965-b2ttgksiaqs2ts1tl6s7rq6mggfiqqhe.apps.googleusercontent.com",
+              "client_id": "1062006014297-qd9ge01gash07qgc2kd9ji3lhhuuh9nk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

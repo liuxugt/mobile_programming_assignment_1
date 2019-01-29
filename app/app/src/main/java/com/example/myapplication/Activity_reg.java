@@ -51,7 +51,7 @@ public class activity_reg extends AppCompatActivity {
                         }
                         else{
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(activity_reg.this, "Authentication failed.",
+                            Toast.makeText(activity_reg.this, "Authentication failed:" + task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
