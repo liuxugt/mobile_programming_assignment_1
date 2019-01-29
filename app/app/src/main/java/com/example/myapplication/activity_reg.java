@@ -19,11 +19,14 @@ import com.google.firebase.auth.FirebaseUser;
 public class activity_reg extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private static final String TAG = "activity_reg";
+    private Button reg_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
 
+        reg_btn = (Button) findViewById(R.id.reg_btn);
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -32,9 +35,7 @@ public class activity_reg extends AppCompatActivity {
         EditText password_ET = (EditText) findViewById(R.id.reg_password);
         String email = mail_ET.getText().toString();
         String password = password_ET.getText().toString();
-
-        Button reg_btn = (Button) findViewById(R.id.reg_btn);
-        reg_btn.setText("submitted");
+        UpdateUI();
         /**Add some requirement for password**/
 
         /**---------------------------------**/
@@ -53,8 +54,16 @@ public class activity_reg extends AppCompatActivity {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(activity_reg.this, "Authentication failed:" + task.getException().getMessage(),
                                     Toast.LENGTH_SHORT).show();
+                            RestoreUI();
                         }
                     }
                 });
+    }
+
+    private void UpdateUI(){
+        reg_btn.setText("submitted");
+    }
+    private void RestoreUI(){
+        reg_btn.setText("register");
     }
 }

@@ -18,13 +18,15 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class activity_log extends AppCompatActivity {
     private FirebaseAuth mAuth;
-
     private static final String TAG = "activity_log";
+    private Button log_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log);
 
+        log_btn = (Button) findViewById(R.id.log_btn);
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -34,8 +36,7 @@ public class activity_log extends AppCompatActivity {
         String email = mail_ET.getText().toString();
         String password = password_ET.getText().toString();
 
-        Button log_btn = (Button) findViewById(R.id.log_btn);
-        log_btn.setText("logging");
+        UpdateUI();
         boolean is_success = false;
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -51,8 +52,16 @@ public class activity_log extends AppCompatActivity {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(activity_log.this, "log in failed.",
                                     Toast.LENGTH_SHORT).show();
+                            RestoreUI();
                         }
                     }
                 });
+    }
+
+    private void UpdateUI(){
+        log_btn.setText("logging");
+    }
+    private void RestoreUI(){
+        log_btn.setText("sign in");
     }
 }
