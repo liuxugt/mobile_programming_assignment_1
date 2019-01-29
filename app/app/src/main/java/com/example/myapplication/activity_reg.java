@@ -15,6 +15,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class activity_reg extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -47,6 +50,11 @@ public class activity_reg extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            String uid = user.getUid();
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            DatabaseReference myRef = database.getReference().child(uid);
+                            myRef.setValue(uid);
+
                             Intent i = new Intent(activity_reg.this, activity_note_list.class);
                             startActivityForResult(i, 0);
                         }
