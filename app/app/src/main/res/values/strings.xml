@@ -8,4 +8,8 @@
     <string name="comment_log">Please type in your username and password\n</string>
     <string name="button_turn_to_register">sign up</string>
     <string name="button_turn_to_login">sign in</string>
+    <string name="text_enter_title">Title</string>
+    <string name="text_enter_body">Body</string>
+    <string name="button_save">Finish\n Save</string>
+    <string name="button_discard">Discard</string>
 </resources>
