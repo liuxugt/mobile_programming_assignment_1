@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyApplication</string>
+    <string name="text_enter_username">Username</string>
+    <string name="text_enter_password">Password</string>
+    <string name="button_register">register</string>
+    <string name="button_log_in">log in</string>
+    <string name="comment_reg">Please type in your username and password</string>
 </resources>
