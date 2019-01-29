@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "45582008017",
+    "firebase_url": "https://mas19programming.firebaseio.com",
+    "project_id": "mas19programming",
+    "storage_bucket": "mas19programming.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45582008017:android:e6cba334613e90ee",
+        "android_client_info": {
+          "package_name": "mag2019.ProgrammingAssignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45582008017-5h5t11sm6iej709uevml9697clpfkdu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoDJ4h8WXO_rMS29alJEIn5XNhztel3oU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

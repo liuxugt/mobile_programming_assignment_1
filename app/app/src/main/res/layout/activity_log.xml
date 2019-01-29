@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity_reg">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_log"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="128dp"
@@ -28,7 +28,7 @@
         android:hint="@string/text_enter_username"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_log" />
 
     <EditText
         android:id="@+id/log_password"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/log_user" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/log_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
@@ -52,7 +52,8 @@
         android:layout_marginTop="125dp"
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
-        android:text="@string/button_log_in"
+        android:onClick="sign_in"
+        android:text="@string/button_turn_to_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log_password" />
