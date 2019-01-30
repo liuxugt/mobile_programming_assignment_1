@@ -19,6 +19,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.List;
+
 public class activity_reg extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private static final String TAG = "activity_reg";
@@ -53,7 +55,7 @@ public class activity_reg extends AppCompatActivity {
                             String uid = user.getUid();
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
                             DatabaseReference myRef = database.getReference().child(uid);
-                            myRef.setValue(uid);
+                            myRef.setValue(user.getEmail());
 
                             Intent i = new Intent(activity_reg.this, activity_note_list.class);
                             startActivityForResult(i, 0);
